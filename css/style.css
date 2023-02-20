@@ -1,0 +1,267 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* HEADER */
+
+.navbar {
+    background-image: url(../img/creeper-minecraft.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.logo {
+    width: 25px;
+    border-radius: 10%;
+}
+
+/* MAIN */
+
+main {
+    background-image: url(../img/fondo-creeper.jpg);
+}
+
+/* --index-- */
+
+.grid-container {
+    display: grid;
+    grid-template-rows: auto 250px auto 250px auto 250px;
+}
+
+.div-grass {
+    background-image: url(../img/dirt-minecraft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-stone {
+    background-image: url(../img/stone-minecraft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-nether {
+    background-image: url(../img/netherack-minecraft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-container {
+    padding: 20px;
+    text-align: justify;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 250px;
+}
+
+/* --biblioteca-- */
+
+.library-main {
+    background-image: url(https://i.pinimg.com/originals/be/97/7a/be977af618e7d4fede2cbd7ccc8975dc.jpg);
+    background-size: cover;
+}
+
+.library-img {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.library-img img {
+    width: 70vw;
+}
+
+.library-flex-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://mundotrucos.com/wp-content/uploads/2020/10/featured-minecraft-how-to-make-a-bookshelf.jpg);
+}
+
+.book-flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book {
+    width: 80vw;
+    border-radius: 5%;
+    background-image: url(https://i.pinimg.com/564x/9b/69/18/9b691890dbff4ff5bc10b57003ad0d9b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.479);
+}
+
+.book img {
+    width: 70vw;
+    padding-top: 10px;
+    border-radius: 3%;
+}
+
+.accordion {
+    padding: 10px;
+}
+
+/* --eventos-- */
+
+.event {
+    height: auto;
+    background-color: rgb(197, 255, 212);
+    text-align: center;
+    border-radius: 10%;
+}
+
+/* --registro-- */
+
+.register {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.register-box {
+    background-color: rgb(197, 255, 212);
+    border-radius: 10%;
+    box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.20);
+}
+
+form {
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.title {
+    padding-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-image: url(../img/obsidian-minecraft.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+footer img {
+    width: 90px;
+    height: 90px;
+}
+
+.footer-div {
+    text-align: center;
+}
+
+/* MEDIA INDEX */
+
+@media screen and (max-width: 320px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-rows: auto 300px auto 300px auto 300px;
+    }
+
+    .flex-container {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .display-none {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .grid-container{
+        display: grid;
+        grid-template-rows: auto 500px auto 500px auto 500px;
+    }
+
+    .flex-container{
+        height: 500px;
+    }
+
+    .text-container {
+        margin-right: 5px;
+    }
+
+    .display-none img {
+        border-radius: 15%;
+        width: 45vw;
+    }
+
+}
+
+/* MEDIA BIBLOTECA */
+
+@media screen and (max-width: 479px) {
+    .library-img{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    
+    .book-flex-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: none;
+    }
+
+    .book {
+        width: 40vw;
+    }
+
+    .book img {
+        width: 35vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .library-flex-container {
+        flex-direction: row;
+    }
+
+    .book {
+        width: 24vw;
+        margin: 0.5vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .book img {
+        width: 22vw;
+    }
+}
