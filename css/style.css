@@ -286,7 +286,7 @@ footer img {
     }
 
     .display-none img {
-        border-radius: 15%;
+        border-radius: 5%;
         width: 45vw;
     }
 
@@ -335,11 +335,12 @@ footer img {
 
     .library-flex-container {
         flex-direction: row;
+        justify-content: space-around;
     }
 
     .book {
         width: 24vw;
-        margin: 0.5vw;
+        margin: 0;
         margin-top: 20px;
         margin-bottom: 20px;
     }
